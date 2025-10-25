@@ -6,7 +6,7 @@ while True:  # Alexis
 
     while True:
 
-        num = (input(f"\nPor favor ingresa un número: "))
+        num = (input("\nPor favor ingresa un número: "))
         if num.isdigit():
             num = int(num)
 
