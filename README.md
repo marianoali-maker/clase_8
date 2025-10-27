@@ -7,7 +7,7 @@ Participantes:
 
 OSMEL SILVA, (osmelsilva67@gmail.com), 
 
-ALEXIS JIACONTINI, (), 
+ALEXIS JIACONTINI, (alexisjklm111@gmail.com), 
 
 DIEGO VERON, (), 
 
