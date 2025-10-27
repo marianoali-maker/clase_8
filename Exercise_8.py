@@ -1,4 +1,4 @@
-while True:  # Bucle principal para repetir el proceso
+while True:  # Bucle principal para repetir el proceso.
 
     print(f"\n{'-'*40} La trifecta {'-'*40}") # Encabezado del programa
 
