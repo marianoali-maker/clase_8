@@ -2,37 +2,41 @@ while True:  # Alexis
 
     print(f"\n{'-'*40} La trifecta {'-'*40}")
 
-    while True:
+    num = input("\nPor favor ingresa un número: ")
 
-        num = (input("\nPor favor ingresa un número: "))
-        if num.isdigit():
-            num = int(num)
+    if not num.isdigit():
+        print("\n!!Dato Inválido, por favor vuelva a ingresar un valor válido!!")
+        continue
 
-            if num == 0:
-                print("\nSe ingresó 0. Fin del programa.")
-                break
+    num = int(num)  
 
-        else:
-            print("\n!!Dato Inválido, por favor vuelva a ingresar un valor válido!!")
-            break
+    if num == 0:
+        print("\nSe ingresó 0. Fin del programa.")
+        break
 
-        # Ingesa una palabra o frase
-        word = input("\nPor favor ingrese una palabra o frase: ")
-        # Muestra la cantidad de letras que tiene la palabra o frase
-        print(f"\nHola tu frase tiene: * {len(word)} * letras")
+    # Ingresa una palabra o frase
+    word = input("\nPor favor ingrese una palabra o frase: ")
 
+    # Calcula cuántos caracteres tiene (incluyendo espacios)
+    num_word = len(word)
+
+    print(f"\nHola, tu frase tiene: * {num_word} * letras")
+
+    # Función factorial
     def factorial(n):
-        if (n == 0):
+        if n == 0:
             return 1
         else:
-            return n * factorial(n-1)
+            return n * factorial(n - 1)
 
-    resultado = factorial(num)
-    print("El factorial de: " + str(word) + ": es: " + str(resultado))
+    # Calcula el factorial del largo de la palabra/frase
+    resultado = factorial(num_word)
+
+    print(f"\nEl factorial de '{word}' es: {resultado}")
 
     if resultado % 2 == 0:
-        print("El resultado es par.")
+        print("\n El resultado es par.")
     else:
-        print("El resultado es impar.")
+        print("\nEl resultado es impar.")
 
-    print(f"\n{'-'*40} La trifecta {'-'*40}")  # nombre del programa
+    print(f"\n{'-'*40} La trifecta {'-'*40}")
