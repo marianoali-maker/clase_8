@@ -35,8 +35,8 @@ while True:  # Alexis
     print(f"\nEl factorial de '{word}' es: {resultado}")
 
     if resultado % 2 == 0:
-        print("\n El resultado es par.")
+        print("\n El resultado es Par.")
     else:
-        print("\nEl resultado es impar.")
+        print("\nEl resultado es Impar.")
 
     print(f"\n{'-'*40} La trifecta {'-'*40}")
